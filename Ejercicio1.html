@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Función Autoejecutable</title>
+</head>
+<body>
+
+  <h2>Ejemplo de función autoejecutable</h2>
+
+  <button onclick="mostrarMensaje()">Mostrar mensaje</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    // Función autoejecutable (se ejecuta sola al cargar la página)
+    (function () {
+      console.log("La página se cargó correctamente");
+    })();
+
+    // Función normal
+    function mostrarMensaje() {
+      document.getElementById("resultado").innerText =
+        "Hola 👋, este mensaje se ejecuta con una función";
+    }
+  </script>
+
+</body>
+</html>
