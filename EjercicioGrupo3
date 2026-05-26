@@ -1,0 +1,7 @@
+const animales = ["perro", "gato", "conejo", "hamster", "pez"];
+
+console.log(animales[2] && animales[3]); 
+
+animales[4] = "Cocodrilo"
+
+console.log(animales[4]);

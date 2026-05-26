@@ -12,10 +12,6 @@
 
     <script>
 
-        // ==========================
-        // COMPONENTE DE ENTRADA
-        // ==========================
-
         function pedirNombre() {
             return prompt("Ingrese el nombre del estudiante:");
         }
@@ -26,19 +22,9 @@
             );
         }
 
-
-        // ==========================
-        // COMPONENTE DE CÁLCULO
-        // ==========================
-
         function calcularPromedio(n1, n2, n3) {
             return (n1 + n2 + n3) / 3;
         }
-
-
-        // ==========================
-        // COMPONENTE DE VALIDACIÓN
-        // ==========================
 
         function obtenerEstado(promedio) {
 
@@ -48,12 +34,6 @@
                 return "REPROBÓ";
             }
         }
-
-
-        // ==========================
-        // COMPONENTE DE MENSAJE
-        // ==========================
-
         function generarMensaje(estudiante) {
 
             return `
@@ -70,11 +50,6 @@
             Estado: ${estudiante.estado}
             `;
         }
-
-
-        // ==========================
-        // COMPONENTE PRINCIPAL
-        // ==========================
 
         function iniciarSistema() {
 

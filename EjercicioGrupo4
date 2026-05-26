@@ -1,0 +1,23 @@
+ class Usuario {
+    constructor(nombre, Email, contraseña) {
+        this.nombre = nombre;
+        this.Email = Email;
+        this.Contraseña = contraseña;
+    }                 
+        obtenerinformacion(){
+        return `Nombre: ${this.nombre}, Email: ${this.Email}, Contraseña: ${this.Contraseña}`;
+        };
+
+        validarDatos(){
+            const regexContraseña = /^(?=.*[A-Z])(?=.*\d)(?=.*\d).{8,}$/;
+
+            const contraseñaValida = regexContraseña.test(this.Contraseña);
+
+            return contraseñaValida;
+        }
+        }
+        const usuario1 = new Usuario("Jorge", "jorge@example.com", "Contraseña123!"  );
+        console.log(usuario1.validarDatos());
+
+        const usuario2 = new Usuario("Doris", "doris@example.com", "Contraseña456!"  );
+        console.log(usuario2.validarDatos());    
